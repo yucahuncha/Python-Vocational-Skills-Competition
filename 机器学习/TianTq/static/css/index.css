@@ -1,0 +1,100 @@
+body {
+    min-width: 1529px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#bgImg {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    color: white;
+    margin-top: 100px;
+    font-size: 60px;
+    width: 540px;
+    font-weight: bold;
+    text-shadow: 1px 1px rgba(197, 223, 248, 0.8), 2px 2px rgba(197, 223, 248, 0.8), 3px 3px rgba(197, 223, 248, 0.8), 4px 4px rgba(197, 223, 248, 0.8), 5px 5px rgba(197, 223, 248, 0.8), 6px 6px rgba(197, 223, 248, 0.8);
+}
+
+.center {
+    color: honeydew;
+    overflow: hidden;
+    text-align: center;
+    width: 900px;
+    margin-top: 150px;
+}
+
+ul {
+    list-style: none;
+    display: inline-block;
+    overflow: hidden;
+    padding-left: 0;
+}
+
+ul li {
+    float: left;
+    margin-right: 60px;
+    background-color: blue;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+li:last-child {
+    margin-right: 0;
+}
+
+ul li div {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 12px;
+}
+
+ul li .desc {
+    margin-left: 20px;
+}
+
+select {
+    border: none;
+    padding-right: 26px;
+    outline: none;
+}
+
+button {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    background-color: #4B7BFE;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: All 0.3s ease-in-out;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translate(5px);
+}
+
+.datetime {
+    margin-left: 10px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>天气数据分析与预测</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body>
+<img src="/static/img/index.png" alt="" id="bgImg"/>
+<div class="content">
+    <div class="title">天气数据分析与预测</div>
+    <div class="center">
+        <ul>
+            <li>
+                <div>
+                    <label for="s1"></label>
+                    <select name="" id="s1">
+                        {% for city in citys %}
+                            <option value="{{ city }}" selected>{{ city }}</option>
+                        {% endfor %}
+{#                        <option value="1" selected>北京</option>#}
+                    </select>
+                </div>
+                <div class="desc">
+                    <button type="button" id="b1">城市基本天气数据分析</button>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</div>
+</body>
+
+<script src="{% static 'js/jquery-1.11.3.min.js' %}"></script>
+<script>
+    // 获取城市select标签
+    var city_select = document.getElementById('s1')
+    // 获取城市button按钮
+    var b1 = document.getElementById("b1");
+    b1.onclick = function () {
+        // 获取当前选中的城市
+        city = city_select.options[city_select.selectedIndex].value;
+        window.open("city/" + city);
+    }
+
+</script>
+
+</html>
